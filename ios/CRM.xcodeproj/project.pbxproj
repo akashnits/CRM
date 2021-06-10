@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		348EB4F34BAA5D5B77F25EF3 /* libPods-CRM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BD31D611B73A6C795F0C59 /* libPods-CRM.a */; };
+		230BD8288C9A693A687DD97C /* libPods-CRM-CRMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886C48E19103327CCE3DC84 /* libPods-CRM-CRMTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F17D790E9EF5E6067F33BC2C /* libPods-CRM-CRMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 877DCF153C569B9BA8A4D44C /* libPods-CRM-CRMTests.a */; };
+		8CB2BA19231DFE2019F2FF53 /* libPods-CRM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0169EEDA804DD991FC53AA0 /* libPods-CRM.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,36 @@
 		00E356EE1AD99517003FC87E /* CRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMTests.m; sourceTree = "<group>"; };
-		0FE719543620A21A0BC17AFA /* Pods-CRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM.release.xcconfig"; path = "Target Support Files/Pods-CRM/Pods-CRM.release.xcconfig"; sourceTree = "<group>"; };
+		0648DEF1356D47BAAFC8BCC3 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		0C01560CCB724102ABDB7678 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CRM/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CRM/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CRM/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CRM/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CRM/main.m; sourceTree = "<group>"; };
-		19BD31D611B73A6C795F0C59 /* libPods-CRM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		486A0582C17710086E72F62E /* Pods-CRM-CRMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM-CRMTests.release.xcconfig"; path = "Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests.release.xcconfig"; sourceTree = "<group>"; };
-		687428089B0EB6A8E4FC8203 /* Pods-CRM-CRMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM-CRMTests.debug.xcconfig"; path = "Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		17A7A74AD7574EF7A67D8C78 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		27B2FAC4CC144E58826432EC /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		32FCEC512ECE40FEBEBB2926 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		3D6160A382C946ADA533CC78 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		6B9C103163D14BAC80E279B6 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		711455BD9C544FF1B0B42C1B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		7886C48E19103327CCE3DC84 /* libPods-CRM-CRMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRM-CRMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACB604AB9A943E482321E74 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CRM/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		877DCF153C569B9BA8A4D44C /* libPods-CRM-CRMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRM-CRMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEFAE776F1D7F0D3700D147E /* Pods-CRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM.debug.xcconfig"; path = "Target Support Files/Pods-CRM/Pods-CRM.debug.xcconfig"; sourceTree = "<group>"; };
+		B0169EEDA804DD991FC53AA0 /* libPods-CRM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19B917AD6FE4FCF80BF77C0 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		CAE2FAA7EB294BB4853070D2 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		CDCCEB94DC8FCAA06D835887 /* Pods-CRM-CRMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM-CRMTests.release.xcconfig"; path = "Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA212921210D4B1487923C26 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		DAC809877FD44248A56164D9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		DDF414233E3E4F4484B0CE73 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		ECCF929CBF2B4CB2BEFC84A2 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED38D2F911C272683F0CCA17 /* Pods-CRM-CRMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM-CRMTests.debug.xcconfig"; path = "Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F41E4B7424DE312224867BE3 /* Pods-CRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM.release.xcconfig"; path = "Target Support Files/Pods-CRM/Pods-CRM.release.xcconfig"; sourceTree = "<group>"; };
+		F7C17E28E7234CB0821E6985 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		FA2D318358559E6F4DD58D23 /* Pods-CRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM.debug.xcconfig"; path = "Target Support Files/Pods-CRM/Pods-CRM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17D790E9EF5E6067F33BC2C /* libPods-CRM-CRMTests.a in Frameworks */,
+				230BD8288C9A693A687DD97C /* libPods-CRM-CRMTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348EB4F34BAA5D5B77F25EF3 /* libPods-CRM.a in Frameworks */,
+				8CB2BA19231DFE2019F2FF53 /* libPods-CRM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +116,33 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				19BD31D611B73A6C795F0C59 /* libPods-CRM.a */,
-				877DCF153C569B9BA8A4D44C /* libPods-CRM-CRMTests.a */,
+				B0169EEDA804DD991FC53AA0 /* libPods-CRM.a */,
+				7886C48E19103327CCE3DC84 /* libPods-CRM-CRMTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		393F2E78582441C0B8D30E87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF929CBF2B4CB2BEFC84A2 /* AntDesign.ttf */,
+				0648DEF1356D47BAAFC8BCC3 /* Entypo.ttf */,
+				DDF414233E3E4F4484B0CE73 /* EvilIcons.ttf */,
+				6B9C103163D14BAC80E279B6 /* Feather.ttf */,
+				711455BD9C544FF1B0B42C1B /* FontAwesome.ttf */,
+				0C01560CCB724102ABDB7678 /* FontAwesome5_Brands.ttf */,
+				17A7A74AD7574EF7A67D8C78 /* FontAwesome5_Regular.ttf */,
+				DAC809877FD44248A56164D9 /* FontAwesome5_Solid.ttf */,
+				27B2FAC4CC144E58826432EC /* Fontisto.ttf */,
+				3D6160A382C946ADA533CC78 /* Foundation.ttf */,
+				F7C17E28E7234CB0821E6985 /* Ionicons.ttf */,
+				CAE2FAA7EB294BB4853070D2 /* MaterialCommunityIcons.ttf */,
+				B19B917AD6FE4FCF80BF77C0 /* MaterialIcons.ttf */,
+				7ACB604AB9A943E482321E74 /* Octicons.ttf */,
+				32FCEC512ECE40FEBEBB2926 /* SimpleLineIcons.ttf */,
+				DA212921210D4B1487923C26 /* Zocial.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -121,7 +160,8 @@
 				00E356EF1AD99517003FC87E /* CRMTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				C09677871ED3FDDAB3E39AB3 /* Pods */,
+				393F2E78582441C0B8D30E87 /* Resources */,
+				A29B33498833386A47E64F91 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,15 +177,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C09677871ED3FDDAB3E39AB3 /* Pods */ = {
+		A29B33498833386A47E64F91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CEFAE776F1D7F0D3700D147E /* Pods-CRM.debug.xcconfig */,
-				0FE719543620A21A0BC17AFA /* Pods-CRM.release.xcconfig */,
-				687428089B0EB6A8E4FC8203 /* Pods-CRM-CRMTests.debug.xcconfig */,
-				486A0582C17710086E72F62E /* Pods-CRM-CRMTests.release.xcconfig */,
+				FA2D318358559E6F4DD58D23 /* Pods-CRM.debug.xcconfig */,
+				F41E4B7424DE312224867BE3 /* Pods-CRM.release.xcconfig */,
+				ED38D2F911C272683F0CCA17 /* Pods-CRM-CRMTests.debug.xcconfig */,
+				CDCCEB94DC8FCAA06D835887 /* Pods-CRM-CRMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,12 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CRMTests" */;
 			buildPhases = (
-				A73CC4A59491CBA907FCF7A2 /* [CP] Check Pods Manifest.lock */,
+				41512302E4D931DEAE575DEE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C4A9CEB98BDF2BE061FD560C /* [CP] Embed Pods Frameworks */,
-				266943FC0FD16EE8D34D7AB3 /* [CP] Copy Pods Resources */,
+				918C7B6A450A81B639566E87 /* [CP] Embed Pods Frameworks */,
+				DEFB1AE5943EFD1B5C20723E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +216,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CRM" */;
 			buildPhases = (
-				B27A721C9D5EA2B5A1E22AA1 /* [CP] Check Pods Manifest.lock */,
+				5DFF08B25E38256E8B969B77 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				2386A94FBAE4B4527717CFE4 /* [CP] Embed Pods Frameworks */,
-				DC879EB7503DFD6461A387AE /* [CP] Copy Pods Resources */,
+				B93718500D667CA2735B9D2A /* [CP] Embed Pods Frameworks */,
+				5C7EA2792B930E146C97674C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,41 +304,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		2386A94FBAE4B4527717CFE4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		266943FC0FD16EE8D34D7AB3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A73CC4A59491CBA907FCF7A2 /* [CP] Check Pods Manifest.lock */ = {
+		41512302E4D931DEAE575DEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,7 +326,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B27A721C9D5EA2B5A1E22AA1 /* [CP] Check Pods Manifest.lock */ = {
+		5C7EA2792B930E146C97674C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DFF08B25E38256E8B969B77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +365,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C4A9CEB98BDF2BE061FD560C /* [CP] Embed Pods Frameworks */ = {
+		918C7B6A450A81B639566E87 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,21 +382,38 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC879EB7503DFD6461A387AE /* [CP] Copy Pods Resources */ = {
+		B93718500D667CA2735B9D2A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM/Pods-CRM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEFB1AE5943EFD1B5C20723E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM-CRMTests/Pods-CRM-CRMTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +468,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687428089B0EB6A8E4FC8203 /* Pods-CRM-CRMTests.debug.xcconfig */;
+			baseConfigurationReference = ED38D2F911C272683F0CCA17 /* Pods-CRM-CRMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +495,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 486A0582C17710086E72F62E /* Pods-CRM-CRMTests.release.xcconfig */;
+			baseConfigurationReference = CDCCEB94DC8FCAA06D835887 /* Pods-CRM-CRMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +519,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEFAE776F1D7F0D3700D147E /* Pods-CRM.debug.xcconfig */;
+			baseConfigurationReference = FA2D318358559E6F4DD58D23 /* Pods-CRM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +545,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FE719543620A21A0BC17AFA /* Pods-CRM.release.xcconfig */;
+			baseConfigurationReference = F41E4B7424DE312224867BE3 /* Pods-CRM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
