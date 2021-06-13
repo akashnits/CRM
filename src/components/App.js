@@ -51,7 +51,11 @@ class App extends React.Component<Props> {
               options={{
                 tabBarLabel: 'Company',
                 tabBarIcon: ({tintColor}) => (
-                  <MaterialCommunityIcons name={'archive'} color={tintColor} size={30} />
+                  <MaterialCommunityIcons
+                    name={'archive'}
+                    color={tintColor}
+                    size={30}
+                  />
                 ),
               }}
               component={CompanyList}
@@ -61,7 +65,11 @@ class App extends React.Component<Props> {
               options={{
                 tabBarLabel: 'AddPerson',
                 tabBarIcon: ({tintColor}) => (
-                  <MaterialCommunityIcons name={'plus'} color={tintColor} size={30} />
+                  <MaterialCommunityIcons
+                    name={'plus'}
+                    color={tintColor}
+                    size={30}
+                  />
                 ),
               }}
               component={AddPerson}
