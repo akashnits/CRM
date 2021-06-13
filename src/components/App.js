@@ -11,21 +11,63 @@ import {Provider} from 'react-redux';
 import reducers from '../reducers/PeopleReducers';
 import {StyleSheet, Text, View} from 'react-native';
 import {createStore} from 'redux';
+import {NavigationContainer} from '@react-navigation/native';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import PeopleList from './PeopleList';
-
+import CompanyList from './CompanyList';
+import AddPerson from './AddPerson';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const store = createStore(
   reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
+
+const Tab = createMaterialBottomTabNavigator();
 
 type props = {};
 class App extends React.Component<Props> {
   render() {
     return (
       <Provider store={store}>
-        <View style={styles.container}>
-          <PeopleList />
-        </View>
+        <NavigationContainer>
+          <Tab.Navigator
+            initialRouteName="Home"
+            activeColor="#f0edf6"
+            inactiveColor="#3e2465"
+            barStyle={styles.barStyle}>
+            <Tab.Screen
+              name="People"
+              options={{
+                tabBarLabel: 'People',
+                tabBarIcon: ({tintColor}) => (
+                  <FontAwesome name={'user'} color={tintColor} size={30} />
+                ),
+              }}
+              component={PeopleList}
+            />
+            <Tab.Screen
+              name="Company"
+              options={{
+                tabBarLabel: 'Company',
+                tabBarIcon: ({tintColor}) => (
+                  <MaterialCommunityIcons name={'archive'} color={tintColor} size={30} />
+                ),
+              }}
+              component={CompanyList}
+            />
+            <Tab.Screen
+              name="AddPerson"
+              options={{
+                tabBarLabel: 'AddPerson',
+                tabBarIcon: ({tintColor}) => (
+                  <MaterialCommunityIcons name={'plus'} color={tintColor} size={30} />
+                ),
+              }}
+              component={AddPerson}
+            />
+          </Tab.Navigator>
+        </NavigationContainer>
       </Provider>
     );
   }
@@ -38,9 +80,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  instructions: {
-    fontStyle: 'italic',
-    padding: 4,
+  barStyle: {
+    backgroundColor: '#694fad',
   },
 });
 
