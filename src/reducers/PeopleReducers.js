@@ -14,7 +14,7 @@ export default (state = initialState, action) => {
         detailView: true,
         personSelected: action.personSelected,
       };
-    case 'NONE_PERSON':
+    case 'NONE_SELECTED':
       return {
         ...state,
         detailView: false,
