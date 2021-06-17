@@ -30,7 +30,7 @@ class PeopleDetail extends React.Component {
             style={styles.closeIcon}
             name={'close'}
             size={30}
-            onPress={() => this.props.nonePerson}
+            onPress={() => this.props.nonePerson()}
           />
           <Text style={[theme.cardTitleStyle, styles.title1]}>
             {this.props.personSelected.firstName}
