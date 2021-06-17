@@ -1,7 +1,7 @@
-export const selectPerson = peopleId => {
+export const selectPerson = personSelected => {
   return {
     type: 'SELECTED_PERSON',
-    selectId: peopleId,
+    personSelected: personSelected,
   };
 };
 

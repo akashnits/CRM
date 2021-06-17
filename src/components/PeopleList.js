@@ -20,11 +20,7 @@ class PeopleList extends React.Component {
     }
   }
   render() {
-    return (
-        <View style={styles.container}>
-          {this.renderInitialView()}
-        </View>
-    );
+    return <View style={styles.container}>{this.renderInitialView()}</View>;
   }
 }
 

@@ -10,8 +10,9 @@ import {
 } from 'react-native';
 import * as actions from '../actions';
 import {getTheme} from 'react-native-material-kit';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import EvilIcon from 'react-native-vector-icons/EvilIcons';
+import SimpleIcon from 'react-native-vector-icons/SimpleLineIcons';
 
 const theme = getTheme();
 
@@ -24,17 +25,17 @@ class PeopleDetail extends React.Component {
             source={require('../images/background.jpg')}
             style={[theme.cardImageStyle, styles.image]}
           />
-          <Icon style={styles.icon} name={'user'} size={100} />
-          <Icon
+          <EvilIcon style={styles.icon} name={'user'} size={100} />
+          <SimpleIcon
             style={styles.closeIcon}
             name={'close'}
             size={30}
-            onPress={() => this.props.noneSelected}
+            onPress={() => this.props.nonePerson}
           />
           <Text style={[theme.cardTitleStyle, styles.title1]}>
             {this.props.personSelected.firstName}
           </Text>
-          <Text style={[theme.cardTitleStyle, styles.title1]}>
+          <Text style={[theme.cardTitleStyle, styles.title2]}>
             {this.props.personSelected.company}
           </Text>
           <View style={styles.textArea}>
@@ -101,6 +102,9 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, actions)(PeopleDetail);
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 20,
+  },
   card: {
     marginTop: 10,
     paddingBottom: 20,
@@ -121,7 +125,6 @@ const styles = StyleSheet.create({
   image: {
     flex: 0,
     height: 100,
-    width: 333,
     backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center',
@@ -129,7 +132,7 @@ const styles = StyleSheet.create({
   closeIcon: {
     position: 'absolute',
     top: 5,
-    left: 295,
+    right: 10,
     color: 'rgba(233,166,154,0.8)',
     backgroundColor: 'rgba(255,255,255,0)',
   },
