@@ -31,6 +31,7 @@ class AddPerson extends React.Component {
     return (
       <ScrollView showsVerticalScroll={false}>
         <View style={styles.form}>
+          <Text style={styles.title}>Add person form</Text>
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'First name...'}
@@ -87,6 +88,12 @@ const styles = StyleSheet.create({
   },
   addButton: {
     marginTop: 40,
+  },
+  title: {
+    paddingTop: 10,
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center',
   },
 });
 
