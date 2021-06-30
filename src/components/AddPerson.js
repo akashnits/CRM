@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {StyleSheet, ScrollView, View} from 'react-native';
 import * as actions from '../actions';
-import {MKColor, Textfield, Button, FlatButton} from 'react-native-material-kit';
+import {MKColor, Textfield, FlatButton} from 'react-native-material-kit';
 import {Text} from 'react-native-paper';
 
 class AddPerson extends React.Component {
