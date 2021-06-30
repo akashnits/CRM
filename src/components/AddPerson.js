@@ -2,8 +2,29 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {StyleSheet, ScrollView, View} from 'react-native';
 import * as actions from '../actions';
-import {MKColor, Textfield, FlatButton} from 'react-native-material-kit';
+import {
+  MKColor,
+  Textfield,
+  AccentRaisedButton,
+} from 'react-native-material-kit';
 import {Text} from 'react-native-paper';
+
+const coloredButtonProps = {
+  style: {
+    marginLeft: 20,
+    marginRight: 20,
+  },
+  rippleLayerColor: MKColor.Lime,
+  onPress: () => console.log('button clicked'),
+};
+
+const buttonTextProps = {
+  pointerEvents: 'none',
+  style: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+};
 
 class AddPerson extends React.Component {
   render() {
@@ -42,9 +63,9 @@ class AddPerson extends React.Component {
           />
         </View>
         <View style={styles.addButton}>
-          <FlatButton>
-            <Text>Add</Text>
-          </FlatButton>
+          <AccentRaisedButton {...coloredButtonProps}>
+            <Text {...buttonTextProps}>Add</Text>
+          </AccentRaisedButton>
         </View>
       </ScrollView>
     );
@@ -65,7 +86,7 @@ const styles = StyleSheet.create({
     color: MKColor.Orange,
   },
   addButton: {
-    marginTop: 20,
+    marginTop: 40,
   },
 });
 
