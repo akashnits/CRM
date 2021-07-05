@@ -27,6 +27,21 @@ const buttonTextProps = {
 };
 
 class AddPerson extends React.Component {
+  onAddPress() {
+    const {firstName, lastName, phone, email, company, project} = this.props;
+
+    this.props.createNewContact({
+      firstName,
+      lastName,
+      phone,
+      email,
+      company,
+      project,
+    });
+
+    this.props.navigation.navigate('Home');
+  }
+
   render() {
     return (
       <ScrollView showsVerticalScroll={false}>
@@ -36,31 +51,55 @@ class AddPerson extends React.Component {
             textInputStyle={styles.fieldStyles}
             placeholder={'First name...'}
             tintcolor={MKColor.Teal}
+            value={this.props.firstName}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'firstName', value})
+            }
           />
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'Last name...'}
             tintcolor={MKColor.Teal}
+            value={this.props.lastName}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'lastName', value})
+            }
           />
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'Phone number...'}
             tintcolor={MKColor.Teal}
+            value={this.props.phone}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'phone', value})
+            }
           />
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'Email...'}
             tintcolor={MKColor.Teal}
+            value={this.props.email}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'email', value})
+            }
           />
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'Company...'}
             tintcolor={MKColor.Teal}
+            value={this.props.company}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'company', value})
+            }
           />
           <Textfield
             textInputStyle={styles.fieldStyles}
             placeholder={'Project...'}
             tintcolor={MKColor.Teal}
+            value={this.props.project}
+            onTextChange={value =>
+              this.props.formUpdate({prop: 'project', value})
+            }
           />
         </View>
         <View style={styles.addButton}>
