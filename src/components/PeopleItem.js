@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/EvilIcons';
 
 const theme = getTheme();
 
+/* we have connected actions to props using react-redux */
 const PeopleItem = props => {
   return (
     <TouchableWithoutFeedback onPress={() => props.selectPerson(props.people)}>

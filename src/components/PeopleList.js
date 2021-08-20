@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {StyleSheet, FlatList, Text, View} from 'react-native';
+import {StyleSheet, FlatList, View} from 'react-native';
 import PeopleItem from './PeopleItem';
 import PeopleDetail from './PeopleDetail';
 
