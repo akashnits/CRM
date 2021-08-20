@@ -1,7 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {StyleSheet, ScrollView, View} from 'react-native';
+import {StyleSheet, ScrollView, View, Button} from 'react-native';
 import * as actions from '../actions';
+import { LogBox } from 'react-native';
 import {
   MKColor,
   Textfield,
@@ -27,6 +28,10 @@ const buttonTextProps = {
 };
 
 class AddPerson extends React.Component {
+  componentDidMount() {
+    LogBox.ignoreLogs(['Animated: `useNativeDriver`']);
+  }
+
   onAddPress() {
     const {firstName, lastName, phone, email, company, project} = this.props;
 
@@ -39,7 +44,7 @@ class AddPerson extends React.Component {
       project,
     });
 
-    this.props.navigation.navigate('Home');
+    //this.props.navigation.navigate('People');
   }
 
   render() {
@@ -103,9 +108,12 @@ class AddPerson extends React.Component {
           />
         </View>
         <View style={styles.addButton}>
-          <AccentRaisedButton {...coloredButtonProps}>
+          <Button
+            onPress={this.onAddPress.bind(this)}
+            title="Add"
+            color="#841584">
             <Text {...buttonTextProps}>Add</Text>
-          </AccentRaisedButton>
+          </Button>
         </View>
       </ScrollView>
     );
@@ -136,4 +144,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default connect(null, actions)(AddPerson);
+const mapStateToProps = state => {
+  const {firstName, lastName, phone, email, company, project} = state;
+  return {firstName, lastName, phone, email, company, project};
+};
+
+export default connect(mapStateToProps, actions)(AddPerson);
