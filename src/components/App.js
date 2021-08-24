@@ -10,7 +10,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import reducers from '../reducers/PeopleReducers';
 import {StyleSheet, Text, View} from 'react-native';
-import {createStore, applyMiddleware} from 'redux';
+import {createStore, compose, applyMiddleware} from 'redux';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import PeopleList from './PeopleList';
@@ -20,7 +20,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import thunk from 'redux-thunk';
 
-const store = createStore(reducers, applyMiddleware(thunk));
+const middleware = [thunk];
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  reducers,
+  composeEnhancers(applyMiddleware(...middleware)),
+);
 
 const Tab = createMaterialBottomTabNavigator();
 
