@@ -28,7 +28,7 @@ export default (state = initialState, action) => {
 
     case 'NEW_CONTACT':
       return {
-        initialState,
+        ...state,
       };
 
     case 'ADD_PERSON':

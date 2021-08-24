@@ -44,7 +44,7 @@ class AddPerson extends React.Component {
       project,
     });
 
-    //this.props.navigation.navigate('People');
+    this.props.navigation.navigate('People');
   }
 
   render() {
