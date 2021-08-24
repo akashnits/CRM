@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {StyleSheet, ScrollView, View, Button} from 'react-native';
-import * as actions from '../actions';
-import { LogBox } from 'react-native';
+import * as actions from '../actions/index';
+import {LogBox} from 'react-native';
 import {
   MKColor,
   Textfield,

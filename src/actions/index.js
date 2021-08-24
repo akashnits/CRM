@@ -11,7 +11,7 @@ export const noneSelected = () => {
   };
 };
 
-export const formUpdate = (prop, value) => {
+export const formUpdate = ({prop, value}) => {
   return {
     type: 'FORM_UPDATE',
     payload: {prop, value},
@@ -27,10 +27,9 @@ export const createNewContact = ({
   project,
 }) => {
   return dispatch => {
-    console.log('hit api');
     const requestOptions = {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: {Accept: 'application/json', 'Content-Type': 'application/json'},
       body: JSON.stringify({
         firstName: firstName,
         lastName: lastName,
@@ -40,7 +39,7 @@ export const createNewContact = ({
         project: project,
       }),
     };
-    fetch('http://192.168.1.21:3000/contact', requestOptions)
+    fetch('http://172.20.10.10:3000/contact', requestOptions) //change to your IP
       .then(response => console.log(response))
       .then(() => {
         dispatch({type: 'NEW_CONTACT'});
