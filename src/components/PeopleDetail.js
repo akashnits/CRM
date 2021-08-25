@@ -60,6 +60,27 @@ class PeopleDetail extends React.Component {
               {this.props.personSelected.project}
             </Text>
           </View>
+          <View style={styles.editArea}>
+            <TouchableOpacity>
+              <MaterialIcons
+                style={styles.textIcons}
+                name={'autorenew'}
+                size={40}
+              />
+              <Text style={[theme.cardContentStyle]}>{'EDIT'}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                this.props.deleteContact(this.props.personSelected._id);
+              }}>
+              <MaterialIcons
+                style={styles.textIcons}
+                name={'delete-forever'}
+                size={40}
+              />
+              <Text style={[theme.cardContentStyle]}>{'DELETE'}</Text>
+            </TouchableOpacity>
+          </View>
           <View>
             <TouchableOpacity>
               <Image
@@ -144,6 +165,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0)',
   },
   textArea: {
+    flexDirection: 'row',
+    paddingLeft: 20,
+    paddingTop: 10,
+    width: 260,
+  },
+  editArea: {
     flexDirection: 'row',
     paddingLeft: 20,
     paddingTop: 10,

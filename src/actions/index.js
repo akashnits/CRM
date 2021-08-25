@@ -61,3 +61,14 @@ export const loadInitialContacts = () => {
       .catch(error => console.log(error));
   };
 };
+
+export const deleteContact = id => {
+  return dispatch => {
+    const requestOptions = {
+      method: 'DELETE',
+    };
+    fetch(`http://192.168.1.21:3000/contact/${id}`, requestOptions)
+      .then(dispatch({type: 'DELETE_CONTACT'}))
+      .catch(error => console.log(error));
+  };
+};
