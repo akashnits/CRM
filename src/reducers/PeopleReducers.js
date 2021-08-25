@@ -1,13 +1,16 @@
-import people from '../People.json';
-
 const initialState = {
-  people,
+  people: [],
   detailView: false,
   personSelected: null,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case 'INITIAL_FETCH':
+      return {
+        ...state,
+        people: action.payload,
+      };
     case 'SELECTED_PERSON':
       return {
         ...state,

@@ -39,11 +39,25 @@ export const createNewContact = ({
         project: project,
       }),
     };
-    fetch('http://172.20.10.10:3000/contact', requestOptions) //change to your IP
+    fetch('http://192.168.1.21:3000/contact', requestOptions) //change to your IP
       .then(response => console.log(response))
       .then(() => {
         dispatch({type: 'NEW_CONTACT'});
       })
+      .catch(error => console.log(error));
+  };
+};
+
+export const loadInitialContacts = () => {
+  return dispatch => {
+    const requestOptions = {
+      method: 'GET',
+    };
+    fetch('http://192.168.1.21:3000/contact', requestOptions)
+      .then(response => {
+        return response.json();
+      })
+      .then(data => dispatch({type: 'INITIAL_FETCH', payload: data}))
       .catch(error => console.log(error));
   };
 };
