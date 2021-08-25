@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Image,
-  Text,
-  View,
-} from 'react-native';
+import {StyleSheet, Image, Text, View} from 'react-native';
 import {getTheme} from 'react-native-material-kit';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -40,7 +35,7 @@ const styles = StyleSheet.create({
   },
   title: {
     top: 20,
-    left: 80,
+    left: 100,
     fontSize: 24,
   },
   image: {
@@ -54,8 +49,8 @@ const styles = StyleSheet.create({
   },
   icon: {
     position: 'absolute',
-    top: 15,
-    left: 0,
+    top: 10,
+    left: 10,
     color: 'white',
     backgroundColor: 'rgba(255,255,255,0)',
   },

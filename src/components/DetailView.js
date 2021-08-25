@@ -63,10 +63,10 @@ class DetailView extends React.Component {
               {this.props.personSelected.project}
             </Text>
           </View>
-          <View style={styles.editArea}>
+          <View style={styles.editDeleteArea}>
             <TouchableOpacity onPress={() => this.update()}>
               <MaterialIcons
-                style={styles.textIcons}
+                style={styles.editIcon}
                 name={'autorenew'}
                 size={40}
               />
@@ -77,30 +77,26 @@ class DetailView extends React.Component {
                 this.props.deleteContact(this.props.personSelected._id);
               }}>
               <MaterialIcons
-                style={styles.textIcons}
+                style={styles.deleteIcon}
                 name={'delete-forever'}
                 size={40}
               />
               <Text style={[theme.cardContentStyle]}>{'DELETE'}</Text>
             </TouchableOpacity>
           </View>
-          <View>
+          <View style={styles.actionArea}>
             <TouchableOpacity>
               <Image
                 source={require('../images/call.png')}
                 style={styles.actionImage}
               />
             </TouchableOpacity>
-          </View>
-          <View>
             <TouchableOpacity>
               <Image
                 source={require('../images/email.png')}
                 style={styles.actionImage}
               />
             </TouchableOpacity>
-          </View>
-          <View>
             <TouchableOpacity>
               <Image
                 source={require('../images/sms.png')}
@@ -108,12 +104,12 @@ class DetailView extends React.Component {
               />
             </TouchableOpacity>
           </View>
-          <View style={styles.actionArea}>
-            <Text>Call</Text>
-            <Text>Text</Text>
-            <Text>Email</Text>
-          </View>
         </ScrollView>
+        <View style={styles.actionArea}>
+          <Text>Call</Text>
+          <Text>Text</Text>
+          <Text>Email</Text>
+        </View>
       </View>
     );
   }
@@ -126,9 +122,6 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, actions)(DetailView);
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 20,
-  },
   card: {
     marginTop: 10,
     paddingBottom: 20,
@@ -149,6 +142,7 @@ const styles = StyleSheet.create({
   image: {
     flex: 0,
     height: 100,
+    width: 390,
     backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center',
@@ -156,9 +150,8 @@ const styles = StyleSheet.create({
   closeIcon: {
     position: 'absolute',
     top: 5,
-    right: 10,
-    color: 'rgba(233,166,154,0.8)',
-    backgroundColor: 'rgba(255,255,255,0)',
+    left: 325,
+    color: 'red',
   },
   icon: {
     position: 'absolute',
@@ -173,12 +166,6 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     width: 260,
   },
-  editArea: {
-    flexDirection: 'row',
-    paddingLeft: 20,
-    paddingTop: 10,
-    width: 260,
-  },
   textIcons: {
     color: '#26a69a',
   },
@@ -187,5 +174,31 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
+  },
+  editIcon: {
+    color: '#26a6e4',
+  },
+  sections: {
+    flexDirection: 'row',
+    paddingLeft: 10,
+    paddingTop: 10,
+    width: 100,
+  },
+  deleteIcon: {
+    color: '#e9a69a',
+  },
+  editDeleteArea: {
+    flexDirection: 'row',
+    paddingLeft: 20,
+    paddingTop: 10,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    backgroundColor: 'rgba(211,211,211, 0.3)',
+    marginBottom: 10,
+    marginTop: 10,
+  },
+  actionImage: {
+    width: 100,
+    height: 100,
   },
 });

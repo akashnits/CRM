@@ -22,10 +22,6 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     marginTop: 40,
   },
-  instructions: {
-    fontStyle: 'italic',
-    padding: 4,
-  },
 });
 
 const mapStateToProps = state => {
