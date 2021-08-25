@@ -122,6 +122,9 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, actions)(DetailView);
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 20,
+  },
   card: {
     marginTop: 10,
     paddingBottom: 20,
