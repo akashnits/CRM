@@ -41,8 +41,6 @@ class UpdatePerson extends React.Component {
       project,
       _id,
     });
-
-    this.props.navigation.navigate('People');
   }
 
   render() {
@@ -72,7 +70,7 @@ class UpdatePerson extends React.Component {
             textInputStyle={styles.fieldStyles}
             placeholder={'Phone number...'}
             tintcolor={MKColor.Teal}
-            value={this.props.phone}
+            value={this.props.phone.toString()}
             onTextChange={value =>
               this.props.formUpdate({prop: 'phone', value})
             }
