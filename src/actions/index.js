@@ -72,3 +72,42 @@ export const deleteContact = id => {
       .catch(error => console.log(error));
   };
 };
+
+export const updateContact = person => {
+  return {
+    type: 'UPDATE_CONTACT',
+    payload: person,
+  };
+};
+
+export const saveContact = ({
+  firstName,
+  lastName,
+  phone,
+  email,
+  company,
+  project,
+  _id,
+}) => {
+  return dispatch => {
+    const requestOptions = {
+      method: 'PUT',
+      headers: {Accept: 'application/json', 'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        firstName: firstName,
+        lastName: lastName,
+        phone: phone,
+        email: email,
+        company: company,
+        project: project,
+        id: _id,
+      }),
+    };
+    fetch(`http://192.168.1.21:3000/contact/${_id}`, requestOptions) //change to your IP
+      .then(response => console.log(response))
+      .then(() => {
+        dispatch({type: 'SAVE_CONTACT'});
+      })
+      .catch(error => console.log(error));
+  };
+};
